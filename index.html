@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta name="robots" content="noindex, nofollow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>CA88</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+        <script src="js/script.js" charset="utf-8"></script>
+    </head>
+    <body>
+      <!-- login -->
+      <div id="Login">
+          <div style="float:left"><input id="login-userid" name="lg_userid" class="loginuser" value="CA" type="text"><br><span class="reg"><a tabindex="-1">立即注册</a></span></div>
+          <div style="float:left">
+              <div>
+                  <input name="lg_pwd" id="login-password" type="password" class="loginpw" style="background-image: url(images/loginbarbg.jpg); background-position:-200px 0px;" onfocus="this.style.backgroundPosition='-100px 0px'" onblur="if(this.value.length==0) this.style.backgroundPosition='-200px 0px'" maxlength="14">
+                  <button id="login-submit" type="submit" class="loginbtn">登录</button>
+                  <span id="login-hint" style="display: none">登录中..</span>
+                  <br>
+                  <span class="pas"><a tabindex="-1">忘记密码？</a></span>
+              </div>
+          </div>
+      </div>
+        <!-- popup prizes -->
+        <div class="pg-prize-overlay "></div>
+        <div class="popup-g-wrapper">
+            <img class="pop-g-img" src="" alt="">
+            <div class="click-close-pop" style="top: 166px;right: -114px;"></div>
+            <div class="claim-prize-btn"></div>
+        </div>
+        <!-- Audio -->
+        <iframe src="audio/silence.mp3" allow="autoplay" id="audio" ></iframe>
+        <audio id="player" autoplay loop>
+            <source src="audio/bg-music.mp3" type="audio/mp3">
+        </audio>
+        <audio id="jumping">
+            <source src="audio/coin-sfx.mp3" type="audio/mp3">
+        </audio>
+        <audio id="dice" >
+            <source src="audio/dice-sfx.mp3" type="audio/mp3">
+        </audio>
+        <!-- End Audio-->
+        <div class="full-container">
+            <!-- Popup-->
+            <div class="popup-main">
+                <div class="popup-wrapper">
+                    <div class="pop1">
+                        <img src="images/pop1.png" alt="" width="700px">
+                        <div class="pop-p center" style="width: 500px;">
+                            <p>1.  如果普通玩家摇动骰子点数为6，则可领取588积分。</p>
+                            <p>2.  如果VIP玩家摇动骰子点数为6，
+                                则必须重摇动一次；当玩家再次摇动骰子点数为3时，则可领取奖金888元。
+                            </p>
+                        </div>
+                        <div class="click-close1">
+                        </div>
+                    </div>
+                    <div class="pop2" >
+                        <img src="images/pop2.png" alt="" width="950px">
+                        <div class="pop-p2 center">
+                            <ol>
+                                <li> 奖金和积分无需申请，获得积分者，会直接派至您的积分帐户，
+                                    获得奖金者请于会员中心的优惠中领取，奖金仅需8倍流水投注任意游戏即可提款。
+                                </li>
+                                <li> 获得实物将于3个工作日内联系获奖玩家。</li>
+                                <li> 每位玩家一天最多可摇动骰子1次。</li>
+                                <li>若玩家达到条件但15天内未领取奖金，则视为放弃本优惠活动。</li>
+                            </ol>
+                        </div>
+                        <div class="click-close2">
+                        </div>
+                    </div>
+                    <div class="pop3">
+                        <img src="images/prize-table.png" alt="">
+                        <div class="click-close3">
+                        </div>
+                    </div>
+                    <div id="lean-overlay">
+                    </div>
+                </div>
+            </div>
+            <!-- End Popup -->
+            <!--  Snow-->
+            <!--  End snow-->
+            <div class="content">
+                <canvas id="canv"></canvas>
+                <div class="title center">
+                    <img src="images/title.png" alt="">
+                    <div class="ptitle1">
+                        <p>
+                            <span>活动时间：</span>2018.12.25 0:00:00 - 23:59:59 和 2019.1.1 0:00:00 - 23:59:59
+                        </p>
+                        <p>(GMT+8北京时间)</p>
+                        <p><span>活动时间：</span>所有亚洲城会员</p>
+                    </div>
+                    <div class="ptitle2">
+                        <p><span>活动内容：</span>活动日期内每天累计存款满200元，即可参与大富翁游戏，摇动骰子。</p>
+                        <p>根据骰子点数可获得奖金最高可达8888元、积分最高1688、 金饰和iPhone XS(256GB)。</p>
+                        <p>百分百中奖！就等你来抽！</p>
+                    </div>
+                </div>
+                <div class="click-sound">
+                </div>
+                <div class="click-prize-table">
+                    <img src="images/button3.png" alt="">
+                </div>
+                <div class="click-example" onclick="clickExample()">
+                    <img src="images/button1.png" alt="">
+                </div>
+                <div class="click-rule">
+                    <img src="images/button2.png" alt="">
+                </div>
+                <div class="stand">
+                    <img src="images/stand.png" alt="">
+                </div>
+                <div class="xmas-tree">
+                    <img src="images/xmas-tree.png" alt="">
+                </div>
+                <div class="snow-man">
+                    <img src="images/snow-man.png" alt="">
+                </div>
+                <div class="click-play"></div>
+                <div class="santa "></div>
+                <!-- Gifts-->
+                <div class="box-2 upDown" glow="yes"></div>
+                <div class="gift-3 upDown" glow="yes"></div>
+                <div class="gift-4 upDown" glow="yes"></div>
+                <div class="gift-6 upDown" glow="yes"></div>
+                <div class="gift-8 upDown" glow="yes"></div>
+                <div class="bg-gt-9 upDown" glow="yes"></div>
+                <div class="box-11 upDown" glow="yes"></div>
+                <div class="bg-gt-12 upDown" glow="yes"></div>
+                <!-- End Gifts-->
+                <!-- Circle-->
+                <div class="circle-c1"></div>
+                <div class="circle-c2"></div>
+                <div class="circle-c3"></div>
+                <div class="circle-c4"></div>
+                <!-- End Circle-->
+                <!-- star-->
+                <div class="star1">
+                    <img src="images/star.png" alt="">
+                </div>
+                <div class="star2">
+                    <img src="images/star.png" alt="">
+                </div>
+                <div class="star3">
+                    <img src="images/star.png" alt="">
+                </div>
+                <!--  End stars-->
+                <!-- <div class="jackpot" glow="yes">
+                    <img src="images/jackpot.png" alt="">
+                    </div> -->
+                <div class="dice-wrapper">
+                    <div class="cubic">
+                        <div class="front"></div>
+                        <div class="right"></div>
+                        <div class="bottom"></div>
+                        <div class="top"></div>
+                        <div class="left"></div>
+                        <div class="back"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
